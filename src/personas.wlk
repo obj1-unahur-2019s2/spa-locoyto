@@ -2,6 +2,7 @@
 object olivia {
 	var gradoDeConcentracion = 6
 	
+	method gradoDeConcentracion() { return gradoDeConcentracion}
 	method recibirMasajes() { gradoDeConcentracion += 3 }
 	method darseUnBanioDeVapor() { }
 	method discute() { gradoDeConcentracion -= 1 }
@@ -37,6 +38,7 @@ object ramiro {
 	method nadaContracturado() { return contracturado == 0 }
 	method estaContracturado() { return contracturado }
 	method tieneLaPielGrasosa() { return pielGrasosa}
+	
 	method recibirMasajes() { if (contracturado > 1) { contracturado -= 2 }
 								else { if (contracturado <= 1 ) { contracturado = 0 }}
 	}
